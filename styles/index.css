@@ -1,0 +1,114 @@
+html, body {
+    font-family: "Anaheim", "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+main {
+    width: 1440px;
+    margin: 0 auto; 
+    padding: 10px 40px;
+}
+header {
+    padding: 10px 40px; 
+    border-bottom : 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+}
+.intro {
+    display:flex; flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 0 60px 0; gap: 93px;
+}
+.intro img {width:390px; height: 84px; border: 1px solid red;}
+.intro p {
+    font-size: 1.25rem; 
+    line-height: 1.6;
+}
+.intro .intro_txt {
+    font-size: 17.5rem;
+    letter-spacing: 0.05em;
+    font-family: "Anaheim"
+} 
+/* info */
+.info {
+    display: grid; grid-template-columns: 300px 560px 560px;
+    column-gap: 45px; row-gap: 60px;
+    align-items: start;
+    gap: 45px; margin-bottom: 60px;
+}
+.content_info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+} 
+.content_info h2 {font-size: 4rem; font-weight: 600;font-family: "Anaheim"}
+.content_info img {width:300px; height:200px;} 
+.content_txt {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    display:flex;
+    flex-direction: column;
+    gap: 60px; 
+    text-align: center;
+
+}
+.content_txt:first-child {margin-bottom: 30px;}
+.info_right {
+    display: contents;
+}
+/* 태그상자에 크기세팅, 부모에 flex */
+.content_skill {
+    grid-column: 3 / 4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 16px;
+    border-left: 1px solid #000; /* left divider */
+    border-bottom: 1px solid #000;
+    padding-bottom: 60px;
+}
+.content_skill h3 {font-size: 2.5rem; margin-bottom: 8px; font-weight: 700; font-family: "Anaheim"}
+.content_skill ul {
+    display: flex; flex-wrap: no wrap; gap: 8px 10px;
+}
+.content_skill li {
+    width: 150px; text-align: center; line-height: 110%;
+    padding: 4px 16px; border-radius: 30px; border: 1px solid #000; 
+}
+.content_ability {
+    grid-column: 3 / 4;
+    grid-row: 2;
+    padding: 40px 0 0 30px; 
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000; 
+    padding-bottom : 60px;
+}
+.content_ability h3 {font-size: 2.5rem; margin-bottom: 40px; font-weight: 700; font-family: "Anaheim"}
+.content_ability p {line-height: 2; gap: 10px;}
+.content_license {
+    padding: 40px 0 60px 30px; 
+    grid-column: 3 / 4;
+    grid-row: 3;
+    border-left: 1px solid #000;
+}
+.content_license h3 {font-size: 2.5rem; font-weight: 700; font-family: "Anaheim"}
+.content_license p {line-height: 2;}
+.portfolio {margin: 60px 0;}
+.portfolio h2 {font-size: 4rem; font-weight: 600;font-family: "Anaheim"} 
+.portfolio_category {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    padding : 10px;
+}
+.portfolio_category ul li {
+    display: flex;
+    flex-flow: column;
+}
