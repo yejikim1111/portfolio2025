@@ -108,7 +108,46 @@ header {
     display: flex;
     padding : 10px;
 }
+.portfolio_category ul {
+    display: flex;
+    align-items: center;
+}
 .portfolio_category ul li {
     display: flex;
     flex-flow: column;
+    font-size: 1.5rem; font-family: "Anaheim"
+}
+.portfolio .projectlist_wdPub {display: flex;}
+.portfolio .projectlist_wdPub .project01 .project_box {
+    padding: 10px 0;
+    font-family: "Anaheim";
+    width: 960px;
+}
+.portfolio .projectlist_wdPub .project01 .project_box p {font-size: 1.25rem; font-family: "Anaheim";}
+.portfolio .projectlist_wdPub .project01 .project_box .title {margin-top: 70px; margin-bottom: 10px; } 
+.portfolio .projectlist_wdPub .project01 .project_box .title h3 {font-family:500; font-size:2.25rem; font-family: "Anaheim";} 
+.portfolio .projectlist_wdPub .project01 .project_box .title strong { font-family: "Anaheim";font-size:2.25rem;} 
+.portfolio .projectlist_wdPub .project01 .project_box
+
+
+
+.portfolio .projectlist_wdPub .project01 .project_box .content_body {
+    display: flex;
+}
+
+
+
+
+footer {
+    width: 1440px;
+    margin: 0 auto; 
+    padding: 100px; 
+    align-items: center;
+    text-align: center;
+}
+footer h2 {margin-bottom:40px; font-size: 2.5rem; font-family: "Anaheim"; font-weight: 700;}
+footer p {margin-bottom:40px; font-size: 1.125rem; line-height: 200%;}
+footer img{margin-bottom:40px; width:150px; height: 100%;}
+footer .snslinkBtn{
+    border: 1px solid #eee;
 }
