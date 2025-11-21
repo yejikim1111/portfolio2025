@@ -56,13 +56,10 @@ header {
     flex-direction: column;
     gap: 60px; 
     text-align: center;
-
 }
 .content_txt:first-child {margin-bottom: 30px;}
-.info_right {
-    display: contents;
-}
-/* 태그상자에 크기세팅, 부모에 flex */
+.info_right {display: contents;}
+
 .content_skill {
     grid-column: 3 / 4;
     grid-row: 1;
@@ -131,27 +128,27 @@ header {
 }
 .project_box .title strong { font-family: "Anaheim";font-size:2.25rem;} 
 .project_box .title h3 {font-family:500; font-size:2.25rem; font-family: "Anaheim"; font-weight: 700;}
+.project_box .content_box {display: flex;}
 .project_box .content {
-
     width: 577px;
     padding-right: 90px;
 } 
-.project_box .content .content_txt {
-    
-}
+.project_box .content .project_skill .skill_list {display:flex;}
+.project_box .content .project_skill .skill_list li {padding: 4px 8px; }
 .project_box .content p {
     line-height: 2;
     text-align: left;
 }
 .project_box .content p.concept,
 .project_box .content p.time {font-weight: 700;}
-.project_box .content_txt
-
-
-
-
-
-
+.project_box .content_box .pj_img img {margin-top: 120px;}
+.project_box .content .btn {margin-top: 40px; }   
+.project_box .content .btn a {    
+    
+    border: 1px solid #000; width:250px;
+    padding: 0 8px;
+    border-radius : 15px;
+}
 
 footer {
     width: 1440px;
