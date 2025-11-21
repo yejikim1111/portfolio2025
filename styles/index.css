@@ -87,7 +87,7 @@ header {
     border-left: 1px solid #000; 
     padding-bottom : 60px;
 }
-.content_ability h3 {font-size: 2.5rem; margin-bottom: 40px; font-weight: 700; font-family: "Anaheim"}
+.content_ability h3 {font-size: 2.5rem; margin-bottom: 40px; font-weight: 700; font-family: "Anaheim";}
 .content_ability p {line-height: 2; gap: 10px;}
 .content_license {
     padding: 40px 0 60px 30px; 
@@ -95,10 +95,10 @@ header {
     grid-row: 3;
     border-left: 1px solid #000;
 }
-.content_license h3 {font-size: 2.5rem; font-weight: 700; font-family: "Anaheim"}
+.content_license h3 {font-size: 2.5rem; font-weight: 700; font-family: "Anaheim";}
 .content_license p {line-height: 2;}
 .portfolio {margin: 60px 0;}
-.portfolio h2 {font-size: 4rem; font-weight: 600;font-family: "Anaheim"} 
+.portfolio h2 {font-size: 4rem; font-weight: 600;font-family: "Anaheim";} 
 .portfolio_category {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -108,47 +108,70 @@ header {
 .portfolio_category ul {
     display: flex;
     align-items: center;
+    gap: 24px;
 }
-.portfolio_category ul li {
-    display: flex;
-    flex-flow: column;
+.portfolio_category [role="teb"] {
+    padding: 10px 16px; border-radius: 10px; border: 1px solid transparent;
     font-size: 1.5rem; font-family: "Anaheim"
 }
-.portfolio .projectlist_wdPub {display: flex; }
-.portfolio .projectlist_wdPub .project01 .project_box {
-    padding: 10px 20px 0 0;
-    font-family: "Anaheim";
-    width: 960px;
+.portfolio_category [role="tab"][aria-selected="true"] { border-color: #000; }
+.projectlist {
+    display: flex; align-items: stretch;
+    border-bottom: 1px solid #000;
+    gap: 0;
+}
+
+.project {
+    flex: 1 1 0;
+    min-width: 0;
     border-right: 1px solid #000;
+    transition: flex 400ms ease;
 }
-.project_box .title {
-    margin : 70px 0 30px 0;
-    display: flex;
-    justify-content: space-between;
+.project:last-child { border-right: none; }
+
+.project.is-active { flex: 3 1 0; }  
+
+.project_box { padding: 10px 20px 0 0; }
+
+.project_index { font-family: "Anaheim"; }
+
+.project-toggle {
+width: 100%;
+display: flex; justify-content: space-between; align-items: center;
+gap: 12px; padding: 24px 0; margin: 40px 0 0;
+background: none; border: none; font: inherit; cursor: pointer;
+font-family: "Anaheim"; font-weight: 700; font-size: 2rem; text-align: left;
 }
-.project_box .title strong { font-family: "Anaheim";font-size:2.25rem;} 
-.project_box .title h3 {font-family:500; font-size:2.25rem; font-family: "Anaheim"; font-weight: 700;}
-.project_box .content_box {display: flex;}
-.project_box .content {
-    width: 577px;
-    padding-right: 90px;
-} 
-.project_box .content .project_skill .skill_list {display:flex;}
-.project_box .content .project_skill .skill_list li {padding: 4px 8px; }
-.project_box .content p {
-    line-height: 2;
-    text-align: left;
+.project-toggle:focus-visible { outline: 2px solid #000; outline-offset: 2px; }
+
+
+.project-content {
+overflow: hidden;
+max-height: 0;
+opacity: 0;
+pointer-events: none;
+transition: max-height 400ms ease, opacity 300ms ease;
 }
-.project_box .content p.concept,
-.project_box .content p.time {font-weight: 700;}
-.project_box .content_box .pj_img img {margin-top: 120px;}
-.project_box .content .btn {margin-top: 40px; }   
-.project_box .content .btn a {    
-    
-    border: 1px solid #000; width:250px;
-    padding: 0 8px;
-    border-radius : 15px;
+.project.is-active .project-content {
+max-height: 5000px; 
+opacity: 1;
+pointer-events: auto;
 }
+
+.content_box { display: flex; gap: 24px; }
+.content { width: 577px; max-width: 100%; padding-right: 40px; }
+.content p { line-height: 2; text-align: left; }
+.content p.concept, .content p.time { font-weight: 700; }
+
+.project_skill .skill_list { display: flex; flex-wrap: wrap; gap: 4px 8px; }
+
+.pj_img img { margin-top: 24px; width: 100%; height: auto; display: block; }
+
+.btn { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
+.btn a, .btn button { border: 1px solid #000; padding: 10px 16px; border-radius: 15px; background: transparent; }
+
+#panel-graphic {display: flex;}
+#panel-graphic li img {width:250px; height: 100%; border-left: 1px solid #000;} 
 
 footer {
     width: 1440px;

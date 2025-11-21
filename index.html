@@ -28,14 +28,14 @@
         <section class="intro">
             <h1><img src="./images/temporary.jpg" alt="logo"></h1>
             <p>사용자 흐름을 정확히 분석해, 기능과 미감을 균형 있게 구축합니다.<br> 기획–디자인–퍼블리싱까지 이어서 작업하는 웹디자이너 김예지 입니다.</p>
-            <p class="intro_txt">PORTFOLIO</p>
+            <p class="intro_typo">PORTFOLIO</p>
         </section>
         <section class="info">
-            <div class="content_info">
+            <div class="info_left">
                 <h2>INFO</h2>
                 <img src="./images/temporary.jpg" alt="프로필사진">
             </div>
-            <div class="content_txt">
+            <div class="info_center">
                 <p>안녕하세요 웹디자이너 김예지입니다.</p>
                 <p>디자인과 퍼블리싱을 통해 화면에서<br>
                     순서를 다듬고 <span>사용자 경험을 극대화</span>합니다. 
@@ -43,12 +43,11 @@
             </div>
             <div class="info_right">
                 <div class="content_skill">
-                    <h3>SKILL</h3>
+                    <h3 class="sub_title">SKILL</h3>
                     <ul class="skill_list01">
                         <li># Photoshop</li>
                         <li># Illustrator</li>
-                        <li># Indesign</li>
-                        
+                        <li># Indesign</li>  
                     </ul>
                     <ul class="skill_list02">
                         <li># Figma</li>
@@ -60,20 +59,20 @@
                         <li># j-Query</li>
                         <li># Javascript</li>
                     </ul>
-                    <ul class="skill_list03">
+                    <ul class="skill_list04">
                         <li># After Effect</li>
                         <li># Premiere</li>
                         <li># Blender</li>
                     </ul>
                 </div>
                 <div class="content_ability">
-                    <h3>Academic ability</h3>
+                    <h3 class="sub_title">Academic ability</h3>
                     <p>2025년 07월 ~ 2025년 12월  UI/UX 프론트엔드 반응형 웹디자인&웹퍼블리셔 (웹,앱,피그마) 개발 양성과정 C 수료</p>
                     <p>2020년 03월 ~ 2025년 08월 안양대학교 디지털미디어디자인</p>
                     <p>2017년 03월 ~ 2020년 02월 신명여자고등학교</p>
                 </div>
                 <div class="content_license">
-                    <h3>License</h3>
+                    <h3 class="sub_title">License</h3>
                     <p>2025년 GTQ 포토샵 1급</p>
                     <p>2026년 GTQI 일러스트레이터 1급</p>
                 </div>
@@ -81,37 +80,35 @@
         </section>
         <section class="portfolio">
             <h2>Portfolio</h2>
-            <nav class="portfolio_category" role="tablist" aria-label="portfolio category">
+            <nav class="portfolio_category">
                 <ul>
                     <li>
-                        <button id="tab-wdpub" role="tab" aria-selected="true" aria-controls="panel-wdpub" data-target="wdpub"
-                        >
+                        <button id="tab_wdpub" data-target="wdpub">
                             Web Design & Publishing
                         </button>
                     </li>
                     <li>
-                        <button id="tab-uxui" role="tab" aria-selected="false" aria-controls="panel-uxui" data-target="uxui"
-                        >
+                        <button id="tab_uxui" data-target="uxui">
                         UX·UI (App / Mobile)
                         </button>
                     </li>
                     <li>
-                        <button id="tab-graphic" role="tab" aria-selected="false" aria-controls="panel-graphic" data-target="graphic"
-                        >
+                        <button id="tab-graphic" data-target="graphic">
                         Graphic Design
                         </button>
                     </li>
                 </ul>
             </nav>
-            <ul class="projectlist_wdPub" id="panel-wdpub" role="tabpanel" aria-labelledby="tab-wdpub" data-panel="wdpub">
-                <!-- pj1 -->
+            <ul class="projectlist_wdPub" id="panel-wdpub" data-panel="wdpub">
+                <!-- pj1_활성화-->
                 <li class="project01">
-                        <div class="project_box">
-                            <p>Project 1</p>
-                            <div class="title">
-                                <strong>G/FORE</strong>
-                                <h3>Cafe24 <span>|</span> Brand Redesign </h3>
-                            </div>
+                    <div class="project_box">
+                        <p>Project 1</p>
+                        <button type="button" class="project-toggle">
+                        <span class="title-left"><strong>G/FORE</strong></span>
+                        <span class="title-right">Cafe24<span>|</span> Brand Redesign</span>
+                        </button>
+                        <div class="project_content" id="gfore_content">
                             <div class="content_box">
                                 <div class="content">
                                     <div class="content_txt">
@@ -126,7 +123,7 @@
                                         <p class="time">제작 기한 <span>3주</span></p>
                                     </div>
                                     <div class="project_skill">
-                                        <p> SKILL</p>
+                                        <p>SKILL</p>
                                         <ul class="skill_list">
                                             <li>#PhotoShop</li>
                                             <li>#Figma</li>
@@ -138,106 +135,95 @@
                                         </ul>
                                     </div>
                                     <div class="btn">
-                                        <a href="#">Prototype (Figma)</a>
-                                        <a href="#">GitHub</a>
-                                        <a href="#">Original Website</a>
+                                        <a href="#" target="_blank">Prototype (Figma)</a>
+                                        <a href="#" target="_blank">GitHub</a>
+                                        <a href="#" target="_blank">Original Website</a>
                                     </div>
                                 </div>
                                 <div class="pj_img">
-                                    <img src="./images/portfolio_bigthum_gfore.jpg" alt="">
+                                    <img src="./images/portfolio_bigthum_gfore.jpg" alt="G/FORE 리디자인 대표 이미지">
                                 </div>
                             </div>
-
                         </div>
+                    </div>
                 </li>
                 <!-- pj2 -->
                 <li class="project02">
                     <div class="project_box">
                         <p>Project 2</p>
-                        <div class="title">
-                            <h3>Sulwhasoo</h3>
-                            <h3>Interactive <span>|</span> Brand Redesign </h3>
-                            <div class="txt">
-                                <div class="txt_body">
-                                    <p>
-                                        설화수의 한방 미학과 프리미엄 이미지를 바탕으로, 젊은 연령층이 자연스럽게 유입될 수 있도록 인터랙티브를 중심으로 한 리디자인 프로젝트 입니다.
-                                    </p>
-                                    <p>
-                                        브랜드 고유의 은은한 질감과 시그니처 컬러를 유지하면서도, 최근 트렌드에 맞춘 동적 전환과 모션을 적용해 전체적인 분위기를 현대적으로 재해석했습니다. 사용 흐름을 단순화하고 비주얼 중심으로 재배치해, 기존 대비 더 젊고 유연한 사용자 경험을 제공하는 방향으로 설계했습니다.
-                                    </p>
-                                    <p>UI & UX 디자인 · HTML/CSS 퍼블리싱 · 반응형 적용
-                                    </p>
+                        <button type="button" class="project-toggle">
+                            <span class="title-left"><strong>Sulwhasoo</strong></span>
+                            <span class="title-right">Interactive <span>|</span> Brand Redesign</span>
+                        </button>
+                        <div class="project_content" id="sulwhasoo-content">
+                            <div class="content_box">
+                                <div class="content">
+                                    <div class="content_txt">
+                                        <p>
+                                            설화수의 한방 미학과 프리미엄 이미지를 바탕으로, 젊은 연령층이 자연스럽게 유입될 수 있도록 인터랙티브를 중심으로 한 리디자인 프로젝트 입니다.
+                                        </p>
+                                        <p>
+                                            브랜드 고유의 은은한 질감과 시그니처 컬러를 유지하면서도, 최근 트렌드에 맞춘 동적 전환과 모션을 적용해 전체적인 분위기를 현대적으로 재해석했습니다. 사용 흐름을 단순화하고 비주얼 중심으로 재배치해, 기존 대비 더 젊고 유연한 사용자 경험을 제공하는 방향으로 설계했습니다.
+                                        </p>
+                                        <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · 반응형 적용</p>
+                                        <p class="time">제작 기한 <span>2.5주</span></p>
+                                    </div>
+                                    <div class="project_skill">
+                                        <p>SKILL</p>
+                                        <ul class="skill_list">
+                                            <li># PhotoShop</li>
+                                            <li># Figma</li>
+                                            <li># HTML</li>
+                                            <li># CSS</li>
+                                            <li># JavaScript</li>
+                                            <li># Jquery</li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="#" target="_blank">Prototype (Figma)</a>
+                                        <a href="#" target="_blank">GitHub</a>
+                                        <a href="#" target="_blank">Original Website</a>
+                                    </div>
                                 </div>
-                                <div class="txt_time">
-                                    <p class="time">제작 기한 <span>2.5주</span></p>
+                                <div class="pj_img">
+                                    <img src="./images/portfolio_bigthum_sulwhasoo.jpg" alt="Sulwhasoo 리디자인 대표 이미지">
                                 </div>
-                                <div class="txt_skill">
-                                    <ul class="skill_list">
-                                        <li># PhotoShop</li>
-                                        <li># Figma</li>
-                                        <li># HTML</li>
-                                        <li># CSS</li>
-                                        <li># JavaScript</li>
-                                        <li># Jquery</li>
-                                    </ul>
-                                </div>
-                                <div class="btn">
-                                    <button type="button">Prototype (Figma)</button>
-                                    <button type="button">GitHub</button>
-                                    <button type="button">Original Website</button>
-                                </div>
-                            </div>
-                            <div class="pj_img">
-                                <img src="./images/portfolio_bigthum_sulwhasoo.jpg" alt="">
                             </div>
                         </div>
+                    </div>
+                </li>
+                <!-- pj3 -->                
                     </div>
                 </li>
                 <!-- pj3 -->
                 <li class="project03">
                     <div class="project_box">
                         <p>Project 3</p>
-                        <div class="title">
-                            <h3>Santa Maria Novella</h3>
-                            <h3>Standard UI <span>|</span> Brand Redesign </h3>
-                            <div class="txt">
-                                <div class="txt_body">
+                        <button
+                        type="button" class="project-toggle" aria-expanded="true" aria-controls="gfore-content"
+                        >
+                            <span class="title-left"><strong>Santa Maria Novella</strong></span>
+                            <span class="title-right"><span class="barnd">Standard UI</span> <span>|</span> Brand Redesign</span>
+                    </button>
+                    <div class="project_content" id="santa_content" role="region" aria-label="snata details"></div>
+                        <div class="content_box">
+                            <div class="content">
+                                <div class="content_txt">
                                     <p>
                                         전통적인 프리미엄 무드를 유지하면서, 상품 중심의 구조와 직관적인 탐색 흐름을 기반으로 정석적인 쇼핑몰 형태로 리디자인한 프로젝트입니다.
                                     </p>
                                     <p>
                                         기존 산타마리아노벨라의 고풍스러운 느낌을 살리며 과도한 연출을 배제하고 기본 UI 패턴을 정돈해 안정적인 사용자 경험을 제공하도록 했습니다. Figma 설계부터 HTML/CSS 마크업, JavaScript 기능 구현까지 전체 프로세스를 표준 방식으로 구현하였습니다.
                                     </p>
-                                    <p>UI & UX 디자인 · HTML/CSS 퍼블리싱 · JavaScript 구현 · 반응형 적용
+                                    <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · JavaScript 구현 · 반응형 적용
                                     </p>
-                                </div>
-                                <div class="txt_time">
                                     <p class="time">제작 기한 <span>2주</span></p>
-                                </div>
-                                <div class="txt_skill">
-                                    <ul class="skill_list">
-                                        <li># PhotoShop</li>
-                                        <li># Figma</li>
-                                        <li># HTML</li>
-                                        <li># CSS</li>
-                                        <li># JavaScript</li>
-                                        <li># Jquery</li>
-                                    </ul>
-                                </div>
-                                <div class="btn">
-                                    <a href="#">Prototype (Figma)</a>
-                                    <a href="#">GitHub</a>
-                                    <a href="#">Original Website</a>
-                                </div>
-                            </div>
-                            <div class="pj_img">
-                                <img src="./images/portfoliobig_thum_santamaria.jpg" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div>j
                 </li>
             </ul>
-            <ul class="uxui" id="panel-uxui" role="tabpanel" aria-labelledby="tab-uxui" data-panel="uxui" hidden></ul>
+            <ul class="projectlist" id="panel-uxui" role="tabpanel" aria-labelledby="tab-uxui" data-panel="uxui" hidden></ul>
             <ul class="graphic" id="panel-graphic" role="tabpanel" aria-labelledby="tab-graphic" data-panel="graphic" hidden>
                 <li><a href="#"><img src="./images/temporary2.jpg" alt="graph_img1"></a></li>
                 <li><a href="#"><img src="./images/temporary2.jpg" alt="graph_img2"></a></li>
@@ -259,5 +245,6 @@
             <a href="https://www.behance.net/ypd00614064/analytics">Behance @아이디</a>
         </div>
     </footer>
+    <script src="./scripts/main.js" defer></script>
 </body>
 </html>
