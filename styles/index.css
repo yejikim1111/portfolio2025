@@ -23,7 +23,6 @@ header {
     text-align: center;
     padding: 200px 0 60px 0; gap: 93px;
 }
-.intro img {width:390px; height: 84px; border: 1px solid red;}
 .intro p {
     font-size: 1.25rem; 
     line-height: 1.6;
@@ -40,9 +39,9 @@ header {
     align-items: start;
     gap: 45px; margin-bottom: 60px;
 }
-.content_info {
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
+.info_center {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -58,6 +57,7 @@ header {
     text-align: center;
 }
 .content_txt:first-child {margin-bottom: 30px;}
+.info_center {margin: 0 0 0 200px;}
 .info_right {display: contents;}
 
 .content_skill {
@@ -67,8 +67,7 @@ header {
     flex-direction: column;
     padding-left: 30px;
     gap: 16px;
-    border-left: 1px solid #000; /* left divider */
-    border-bottom: 1px solid #000;
+    border-left: 1px solid #000; 
     padding-bottom: 60px;
 }
 .content_skill h3 {font-size: 2.5rem; margin-bottom: 8px; font-weight: 700; font-family: "Anaheim"}
@@ -83,7 +82,6 @@ header {
     grid-column: 3 / 4;
     grid-row: 2;
     padding: 40px 0 0 30px; 
-    border-bottom: 1px solid #000;
     border-left: 1px solid #000; 
     padding-bottom : 60px;
 }
@@ -93,7 +91,7 @@ header {
     padding: 40px 0 60px 30px; 
     grid-column: 3 / 4;
     grid-row: 3;
-    border-left: 1px solid #000;
+    border-left: 1px solid #000; 
 }
 .content_license h3 {font-size: 2.5rem; font-weight: 700; font-family: "Anaheim";}
 .content_license p {line-height: 2;}
@@ -116,6 +114,7 @@ header {
 }
 .portfolio_category [role="tab"][aria-selected="true"] { border-color: #000; }
 .projectlist {
+    margin-top: 200px;
     display: flex; align-items: stretch;
     border-bottom: 1px solid #000;
     gap: 0;
