@@ -79,3 +79,21 @@ if (currentActive) {
 const first = listEl.querySelector(".project");
 if (first) setActiveCard(first);
 }
+
+
+const modal = document.getElementById('posterModal');
+const modalImage = document.getElementById('modalImage');
+const thumbs = document.querySelectorAll('.poster-thumb');
+thumbs.forEach(thumb => {
+    thumb.addEventListener('click', function (e) {
+        e.preventDefault();
+        const imgSrc = this.querySelector('img').src;
+        modalImage.src = imgSrc;
+        modal.classList.add('active');
+    });
+});
+modal.addEventListener('click', function (e) {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+    }
+});

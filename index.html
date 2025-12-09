@@ -27,7 +27,7 @@
     <main>
         <section class="intro">
             <p>사용자 흐름을 정확히 분석해, 기능과 미감을 균형 있게 구축합니다.<br> 기획–디자인–퍼블리싱까지 이어서 작업하는 웹디자이너 김예지 입니다.</p>
-            <p class="intro_typo">PORTFOLIO</p>
+            <h1 class="intro_typo">PORTFOLIO</h1>
         </section>
         <section class="info">
             <div class="info_left">
@@ -77,8 +77,10 @@
                 </div>
             </div>
         </section>
+
         <section class="portfolio">
             <h2>Portfolio</h2>
+            <!-- 추후 sticky로 상단에 붙일 것 -->
             <nav class="portfolio_category">
                 <ul>
                     <li>
@@ -98,159 +100,188 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="projectlist_wdPub" id="panel-wdpub" data-panel="wdpub">
-                <!-- pj1_활성화-->
-                <li class="project01">
-                    <div class="project_box">
-                        <p>Project 1</p>
-                        <button type="button" class="project-toggle">
+            <div class="project_list" id="wdpub">
+                <!-- pj1-active상태 -->
+                <div class="project-item is-active" id="project01">
+                    <p>Project 1</p>
+                    <button type="button" class="project-toggle-header">
                         <span class="title-left"><strong>G/FORE</strong></span>
-                        <span class="title-right">Cafe24<span>|</span> Brand Redesign</span>
-                        </button>
-                        <div class="project_content" id="gfore_content">
-                            <div class="content_box">
-                                <div class="content">
-                                    <div class="content_txt">
-                                        <p>
-                                            프리미엄 골프웨어 브랜드 G/FORE의 고급스러운 무드와 강렬하고 감각적인 컬러감을 유지하면서, 현대적인 흐름에 맞게 재구성한 리디자인 프로젝트입니다.
-                                        </p>
-                                        <p>
-                                            상품 탐색 과정이 자연스럽게 이어지도록 UI/UX 구조를 정돈하고, 메인 비주얼을 브랜드 아이덴티티에 맞게 강화했습니다. 브랜드의 하이엔드 이미지를 보다 선명하게 보여주기 위해 시각적 계층 구조와 페이지 리듬을 다시 설계했습니다.
-                                        </p>
-                                        <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · 반응형 적용
-                                        </p>
-                                        <p class="time">제작 기한 <span>3주</span></p>
-                                    </div>
-                                    <div class="project_skill">
-                                        <p>SKILL</p>
-                                        <ul class="skill_list">
-                                            <li>#PhotoShop</li>
-                                            <li>#Figma</li>
-                                            <li>#HTML</li>
-                                            <li>#CSS</li>
-                                            <li>#JavaScript</li>
-                                            <li>#Jquery</li>
-                                            <li>#Cafe24</li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="#" target="_blank">Prototype (Figma)</a>
-                                        <a href="#" target="_blank">GitHub</a>
-                                        <a href="#" target="_blank">Original Website</a>
-                                    </div>
-                                </div>
-                                <div class="pj_img">
-                                    <img src="./images/portfolio_bigthum_gfore.jpg" alt="G/FORE 리디자인 대표 이미지">
-                                </div>
-                            </div>
+                        <span class="title-right_first">Cafe24</span>
+                        <span class="title-right_second">Brand Redesign</span>
+                    </button>
+                    <div class="pj_img">
+                        <img src="./images/portfolio_bigthum_gfore.jpg" alt="G/FORE 리디자인 대표 이미지">
+                    </div>
+                    <div class="project-panel">
+                        <p>
+                            프리미엄 골프웨어 브랜드 G/FORE의 고급스러운 무드와 강렬하고 감각적인 컬러감을 유지하면서, 현대적인 흐름에 맞게 재구성한 리디자인 프로젝트입니다.
+                        </p>
+                        <p>
+                            상품 탐색 과정이 자연스럽게 이어지도록 UI/UX 구조를 정돈하고, 메인 비주얼을 브랜드 아이덴티티에 맞게 강화했습니다. 브랜드의 하이엔드 이미지를 보다 선명하게 보여주기 위해 시각적 계층 구조와 페이지 리듬을 다시 설계했습니다.
+                        </p>
+                        <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · 반응형 적용
+                        </p>
+                        <p class="time">제작 기한 <span>3주</span></p>
+                        <div class="project_skill">
+                            <p>SKILL</p>
+                            <ul class="skill_list">
+                                <li>#PhotoShop</li>
+                                <li>#Figma</li>
+                                <li>#HTML</li>
+                                <li>#CSS</li>
+                                <li>#JavaScript</li>
+                                <li>#Jquery</li>
+                                <li>#Cafe24</li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <a href="#" target="_blank">Prototype (Figma)</a>
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Original Website</a>
                         </div>
                     </div>
-                </li>
-                <!-- pj2 -->
-                <li class="project02">
-                    <div class="project_box">
-                        <p>Project 2</p>
-                        <button type="button" class="project-toggle">
-                            <span class="title-left"><strong>Sulwhasoo</strong></span>
-                            <span class="title-right">Interactive <span>|</span> Brand Redesign</span>
-                        </button>
-                        <div class="project_content" id="sulwhasoo-content">
-                            <div class="content_box">
-                                <div class="content">
-                                    <div class="content_txt">
-                                        <p>
-                                            설화수의 한방 미학과 프리미엄 이미지를 바탕으로, 젊은 연령층이 자연스럽게 유입될 수 있도록 인터랙티브를 중심으로 한 리디자인 프로젝트 입니다.
-                                        </p>
-                                        <p>
-                                            브랜드 고유의 은은한 질감과 시그니처 컬러를 유지하면서도, 최근 트렌드에 맞춘 동적 전환과 모션을 적용해 전체적인 분위기를 현대적으로 재해석했습니다. 사용 흐름을 단순화하고 비주얼 중심으로 재배치해, 기존 대비 더 젊고 유연한 사용자 경험을 제공하는 방향으로 설계했습니다.
-                                        </p>
-                                        <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · 인터렉티브</p>
-                                        <p class="time">제작 기한 <span>2.5주</span></p>
-                                    </div>
-                                    <div class="project_skill">
-                                        <p>SKILL</p>
-                                        <ul class="skill_list">
-                                            <li># PhotoShop</li>
-                                            <li># Figma</li>
-                                            <li># HTML</li>
-                                            <li># CSS</li>
-                                            <li># JavaScript</li>
-                                            <li># Jquery</li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="#" target="_blank">Prototype (Figma)</a>
-                                        <a href="#" target="_blank">GitHub</a>
-                                        <a href="#" target="_blank">Original Website</a>
-                                    </div>
-                                </div>
-                                <div class="pj_img">
-                                    <img src="./images/portfolio_bigthum_sulwhasoo.jpg" alt="Sulwhasoo 리디자인 대표 이미지">
-                                </div>
-                            </div>
+                </div>
+                <div class="project-item" id="project02">
+                    <p>Project 2</p>
+                    <button type="button" class="project-toggle-header">
+                        <span class="title-left"><strong>Sulwhasoo</strong></span>
+                        <span class="title-right_first">Interactive</span>
+                        <span class="title-right_second">Brand Redesign</span>
+                    </button>
+                    <div class="pj_img">
+                        <img src="./images/portfolio_bigthum_sulwhasoo.jpg" alt="Sulwhasoo 리디자인 대표 이미지">
+                    </div>
+                    <div class="project-panel" hidden>
+                        <p>
+                            설화수의 한방 미학과 프리미엄 이미지를 바탕으로, 젊은 연령층이 자연스럽게 유입될 수 있도록 인터랙티브를 중심으로 한 리디자인 프로젝트 입니다.
+                        </p>
+                        <p>
+                            브랜드 고유의 은은한 질감과 시그니처 컬러를 유지하면서도, 최근 트렌드에 맞춘 동적 전환과 모션을 적용해 전체적인 분위기를 현대적으로 재해석했습니다. 사용 흐름을 단순화하고 비주얼 중심으로 재배치해, 기존 대비 더 젊고 유연한 사용자 경험을 제공하는 방향으로 설계했습니다.
+                        </p>
+                        <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · 인터렉티브</p>
+                        <p class="time">제작 기한 <span>2.5주</span></p>
+                        <div class="project_skill">
+                            <p>SKILL</p>
+                            <ul class="skill_list">
+                                <li># PhotoShop</li>
+                                <li># Figma</li>
+                                <li># HTML</li>
+                                <li># CSS</li>
+                                <li># JavaScript</li>
+                                <li># Jquery</li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <a href="https://www.figma.com/proto/VLTl3orEwuw3NeGhtNVeLI/-portfolio-Project2_%EC%84%A4%ED%99%94%EC%88%98?node-id=60-455&t=EcKNZEhKvMPqsrUc-1" target="_blank">Prototype (Figma)</a>
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Original Website</a>
                         </div>
                     </div>
-                </li>
-                <!-- pj3 -->                
+                </div>
+                <div class="project-item" id="project03">
+                    <p>Project 3</p>
+                    <button type="button" class="project-toggle-header">
+                        <span class="title-left"><strong>Santa Maria Novella</strong></span>
+                        <span class="title-right_first">Standard UI</span>
+                        <span class="title-right_second">Brand Redesign</span>
+                    </button>
+                    <div class="pj_img">
+                        <img src="./images/portfoliobig_thum_santamaria.jpg" alt="Santa Maria Novella 리디자인 대표 이미지">
                     </div>
-                </li>
-                <!-- pj3 -->
-                <li class="project03">
-                    <div class="project_box">
-                        <p>Project 3</p>
-                        <button type="button" class="project-toggle">
-                            <span class="title-left"><strong>Santa Maria Novella</strong></span>
-                            <span class="title-right">Standard UI <span>|</span> Brand Redesign</span>
-                        </button>
-                        <div class="project_content" id="sulwhasoo-content">
-                            <div class="content_box">
-                                <div class="content">
-                                    <div class="content_txt">
-                                        <p>
-                                            전통적인 프리미엄 무드를 유지하면서, 상품 중심의 구조와 직관적인 탐색 흐름을 기반으로 정석적인 쇼핑몰 형태로 리디자인한 프로젝트입니다.
-                                        </p>
-                                        <p>
-                                            기존 산타마리아노벨라의 고풍스러운 느낌을 살리며 과도한 연출을 배제하고 기본 UI 패턴을 정돈해 안정적인 사용자 경험을 제공하도록 했습니다. Figma 설계부터 HTML/CSS 마크업, JavaScript 기능 구현까지 전체 프로세스를 표준 방식으로 구현하였습니다.
-                                        </p>
-                                        <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · 반응형 적용</p>
-                                        <p class="time">제작 기한 <span>2주</span></p>
-                                    </div>
-                                    <div class="project_skill">
-                                        <p>SKILL</p>
-                                        <ul class="skill_list">
-                                            <li># PhotoShop</li>
-                                            <li># Figma</li>
-                                            <li># HTML</li>
-                                            <li># CSS</li>
-                                            <li># JavaScript</li>
-                                            <li># Jquery</li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="#" target="_blank">Prototype (Figma)</a>
-                                        <a href="#" target="_blank">GitHub</a>
-                                        <a href="#" target="_blank">Original Website</a>
-                                    </div>
-                                </div>
-                                <div class="pj_img">
-                                    <img src="./images/portfoliobig_thum_santamaria.jpg" alt="Sulwhasoo 리디자인 대표 이미지">
-                                </div>
-                            </div>
+                    <div class="project-panel" hidden>
+                        <p>
+                            전통적인 프리미엄 무드를 유지하면서, 상품 중심의 구조와 직관적인 탐색 흐름을 기반으로 정석적인 쇼핑몰 형태로 리디자인한 프로젝트입니다.
+                        </p>
+                        <p>
+                            기존 산타마리아노벨라의 고풍스러운 느낌을 살리며 과도한 연출을 배제하고 기본 UI 패턴을 정돈해 안정적인 사용자 경험을 제공하도록 했습니다. Figma 설계부터 HTML/CSS 마크업, JavaScript 기능 구현까지 전체 프로세스를 표준 방식으로 구현하였습니다.
+                        </p>
+                        <p class="concept">UI & UX 디자인 · HTML/CSS 퍼블리싱 · 반응형 적용</p>
+                        <p class="time">제작 기한 <span>2주</span></p>
+                        <div class="project_skill">
+                            <p>SKILL</p>
+                            <ul class="skill_list">
+                                <li># PhotoShop</li>
+                                <li># Figma</li>
+                                <li># HTML</li>
+                                <li># CSS</li>
+                                <li># JavaScript</li>
+                                <li># Jquery</li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <a href="#" target="_blank">Prototype (Figma)</a>
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Original Website</a>
                         </div>
                     </div>
-                </li>
-                <!-- pj3 -->                
-                    </div>
-                </li>
-            </ul>
-            <ul class="projectlist" id="panel-uxui" role="tabpanel" aria-labelledby="tab-uxui" data-panel="uxui" hidden></ul>
-            <ul class="graphic" id="panel-graphic" role="tabpanel" aria-labelledby="tab-graphic" data-panel="graphic" hidden>
-                <li><a href="#"><img src="./images/temporary2.jpg" alt="graph_img1"></a></li>
-                <li><a href="#"><img src="./images/temporary2.jpg" alt="graph_img2"></a></li>
-                <li><a href="#"><img src="./images/temporary2.jpg" alt="graph_img3"></a></li>
-                <li><a href="#"><img src="./images/temporary2.jpg" alt="graph_img4"></a></li>
-                <li><a href="#"><img src="./images/temporary2.jpg" alt="graph_img5"></a></li>
-            </ul>
+                </div>
+            </div>
+            <div class="project_list" id="uxui">
+            </div>
+            <div class="project_list" id="graphic">
+                <div class="grahic-row graphic-row--top">
+                    <ul class="graphic-list">
+                        <li class="graphic-item">
+                            <button type="button" class="graphic-card" data-work="grahpic01">
+                                <figure>
+                                    <img src="./images/poster01.jpg" alt="그래픽 작업 썸네일1">
+                                    <figcaption>Poster · Compose </figcaption>
+                                </figure>
+                            </button>
+                            <button type="button" class="graphic-card" data-work="grahpic02">
+                                <figure>
+                                    <img src="./images/poster02.jpg" alt="그래픽 작업 썸네일2">
+                                    <figcaption>Poster · Mammoth coffee </figcaption>
+                                </figure>
+                            </button>
+                            <button type="button" class="graphic-card" data-work="grahpic03">
+                                <figure>
+                                    <img src="./images/poster03.jpg" alt="그래픽 작업 썸네일3">
+                                    <figcaption>Poster · Keychron </figcaption>
+                                </figure>
+                            </button>
+                            <button type="button" class="graphic-card" data-work="grahpic04">
+                                <figure>
+                                    <img src="./images/poster04.jpg" alt="그래픽 작업 썸네일4">
+                                    <figcaption>Poster · Dyson </figcaption>
+                                </figure>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="grahic-row graphic-row--bottom">
+                    <ul class="graphic-list">
+                        <li class="graphic-item">
+                            <button type="button" class="graphic-card" data-work="grahpic05">
+                                <figure>
+                                    <img src="./images/poster01.jpg" alt="그래픽 작업 썸네일5">
+                                    <figcaption>detailcut ·  </figcaption>
+                                </figure>
+                            </button>
+                            <button type="button" class="graphic-card" data-work="grahpic06">
+                                <figure>
+                                    <img src="./images/poster02.jpg" alt="그래픽 작업 썸네일6">
+                                    <figcaption>Poster ·  </figcaption>
+                                </figure>
+                            </button>
+                            <button type="button" class="graphic-card" data-work="grahpic07">
+                                <figure>
+                                    <img src="./images/poster03.jpg" alt="그래픽 작업 썸네일7">
+                                    <figcaption>Poster ·  </figcaption>
+                                </figure>
+                            </button>
+                            <button type="button" class="graphic-card" data-work="grahpic08">
+                                <figure>
+                                    <img src="./images/poster04.jpg" alt="그래픽 작업 썸네일8">
+                                    <figcaption>Poster ·  </figcaption>
+                                </figure>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -261,8 +292,8 @@
             웹디자인 · UI/UX · 프론트 퍼블리싱 모두 가능합니다.
         </p>
         <div class="snslinkBtn">
-            <a href="https://github.com/yejikim1111">GitHub @yejikim1111</a>
-            <a href="https://www.behance.net/ypd00614064/analytics">Behance @아이디</a>
+            <a href="https://github.com/yejikim1111" target="_blank" >GitHub @yejikim1111</a>
+            <a href="https://www.behance.net/ypd00614064/analytics" target="_blank">Behance @아이디</a>
         </div>
     </footer>
     <script src="./scripts/main.js" defer></script>
